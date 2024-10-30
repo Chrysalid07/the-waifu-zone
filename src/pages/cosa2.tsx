@@ -58,7 +58,7 @@ export default function Page() {
                 <div className="flex items-center justify-center w-96 aspect-square bg-white/25 rounded-lg text-white font-black text-9xl">
                     {localCount}
                 </div>
-                <button className="w-full h-14 bg-white rounded-lg text-4xl font-black" onClick={() => {setLocalCount(localCount + 1)}}>
+                <button className="w-full h-14 bg-white rounded-lg text-4xl font-black text-black" onClick={() => {setLocalCount(localCount + 1)}}>
                     ADD!
                 </button>
             </div>
@@ -67,7 +67,7 @@ export default function Page() {
                 <div className="flex items-center justify-center w-96 aspect-square bg-white/25 rounded-lg text-white font-black text-9xl">
                     {globalLoading ? "···" : globalCount}
                 </div>
-                <button className="w-full h-14 bg-white rounded-lg text-4xl font-black" disabled={globalButtonLoading} onClick={() => {
+                <button className="w-full h-14 bg-white rounded-lg text-4xl font-black text-black" disabled={globalButtonLoading} onClick={() => {
                     if (!globalButtonLoading) setGlobalCount()
                 }}>
                     {globalButtonLoading ? "···" : "ADD!"}
