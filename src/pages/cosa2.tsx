@@ -42,13 +42,13 @@ export default function Page() {
     }, [])
 
     useEffect(() => {
-        const f = async (override: boolean) => {
+        const f = async () => {
             const cookies = new Cookies(null, {path: "/"})
 
             cookies.set("localCount", localCount.toString())
         }
 
-        
+        f()
     }, [localCount])
 
     return (
