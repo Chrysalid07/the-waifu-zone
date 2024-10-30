@@ -5,7 +5,7 @@ export default function Home() {
     <div className={`min-h-screen bg-sky-800 flex flex-col gap-12`}>
       <div className="flex flex-row g-12 p-4">
         <h1 className="text-7xl text-white">Monitas Chinas</h1>
-        <Link href="cosa" className="absolute right-4 top-4">
+        <Link href="cosa" className="opacity-10 absolute right-4 top-4">
           <img className="padding-right w-12 h-12" src="https://images.wikidexcdn.net/mwuploads/wikidex/8/80/latest/20220228205623/Magnemite.png" />
         </Link>
       </div>

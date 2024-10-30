@@ -11,7 +11,7 @@ export default function Page() {
             </div>
             <div className=" flex flex-row gap-12">
                 <img className="rounded-full w-96 h-96" src="/Zenless Zone Zero foto Ellen.png" alt="Ellen Joe" />
-            </div>  
+            </div>
         </div>
     )
 }
