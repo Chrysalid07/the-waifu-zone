@@ -22,13 +22,13 @@ export default function Page() {
 
         setLocalCount(parseInt(cookies.get("localCount") || "0"))
 
-        const interval = setInterval(() => {
-            axios.get("/api/counter").then(r => {
-                if (globalButtonLoading) return
-
-                _setGlobalCount(r.data.count)
-            })
-        }, 500)
+        //const interval = setInterval(() => {
+        //    axios.get("/api/counter").then(r => {
+        //        if (globalButtonLoading) return
+        //
+        //        _setGlobalCount(r.data.count)
+        //    })
+        //}, 500)
 
         axios.get("/api/counter").then(r => {
             _setGlobalCount(r.data.count)
@@ -36,9 +36,9 @@ export default function Page() {
             setGlobalLoading(false)
         })
 
-        return () => {
-            clearInterval(interval)
-        }
+        //return () => {
+        //    clearInterval(interval)
+        //}
     }, [])
 
     useEffect(() => {
