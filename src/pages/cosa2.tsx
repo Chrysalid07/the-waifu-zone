@@ -20,7 +20,7 @@ export default function Page() {
     useEffect(() => {
         const cookies = new Cookies(null, {path: "/"})
 
-        setLocalCount(parseInt(cookies.get("localCount")))
+        setLocalCount(parseInt(cookies.get("localCount") || "0"))
 
         const interval = setInterval(() => {
             axios.get("/api/counter").then(r => {
