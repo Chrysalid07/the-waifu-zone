@@ -11,21 +11,17 @@ export default function Home() {
       </div>
       <div className=" flex flex-row p-4 gap-12">
         <Link className="rounded-full w-fit border- border-slate-500" href="ellen">
-          <img className="rounded-full w-96 h-96" src="/Zenless Zone Zero foto Ellen.png" alt="Ellen Joe" />
+          <img className="rounded-full w-80 h-80" src="/Zenless Zone Zero foto Ellen.png" alt="Ellen Joe" />
         </Link>
         <Link className="rounded-lg w-fit" href="iono">
-          <img className="rounded-full w-96 h-96" src="/Z Iono photo.png" alt="Iono" />
+          <img className="rounded-full w-80 h-80" src="/Z Iono photo.png" alt="Iono" />
         </Link>
-        <img className="rounded-full w-96 h-96" src="/To Be Determined.png" alt="Unknown"/>
+        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Unknown"/>
       </div>
       <div className=" flex flex-row p-4 gap-12">
-        <Link className="rounded-full w-fit border- border-slate-500" href="ellen">
-          <img className="rounded-full w-96 h-96" src="/To Be Determined.png" alt="Unknown" />
-        </Link>
-        <Link className="rounded-lg w-fit" href="iono">
-          <img className="rounded-full w-96 h-96" src="/To Be Determined.png" alt="Unknown" />
-        </Link>
-        <img className="rounded-full w-96 h-96" src="/To Be Determined.png" alt="Unknown"/>
+        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Unknown" />
+        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Unknown" />
+        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Unknown" />
       </div>
     <p className="text-2xl font-Bold">Texto de Prueba</p>
     <p className="text-2xl text-white">Tania Cabezona</p>
