@@ -1,4 +1,5 @@
 import axios from "axios"
+import Link from "next/link"
 import { useEffect, useState } from "react"
 import Cookies from "universal-cookie"
 
@@ -53,6 +54,15 @@ export default function Page() {
 
     return (
         <div className="w-full min-h-screen bg-black flex flex-row items-center justify-center gap-8">
+            <div className="flex flex-row">
+                <Link className="rounded-lg bg-white" href="the-test-zone">
+                    <img className="w-10 h-10" src="https://cdn-icons-png.flaticon.com/512/1174/1174444.png" />
+                </Link>
+                <Link className="rounded-lg bg-white" href="/">
+                  <img className="w-10 h-10" src="Casa.webp" />
+                </Link>
+            </div>
+            <h1 className="text-4xl text-extrablack text-white">Rincón de pruebas 2</h1>
             <div className="flex flex-col w-96 gap-4">
                 <div className="w-full bg-white/10 h-10 flex items-center justify-center text-white rounded-lg">LOCAL COUNTER</div>
                 <div className="flex items-center justify-center w-96 aspect-square bg-white/25 rounded-lg text-white font-black text-9xl">

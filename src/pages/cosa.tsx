@@ -5,9 +5,14 @@ export default function Page() {
     const [selectedGame, setSelectedGame] = useState("genshin")
     return (
         <div className="w-full min-h-screen bg-black flex flex-col items-center justify-center">
-            <Link className="rounded-lg bg-white" href="/">
-                <img className="w-10 h-10" src="Casa.webp" />
-            </Link>
+            <div className="flex flex-row">
+                <Link className="rounded-lg bg-white" href="the-test-zone">
+                    <img className="w-10 h-10" src="https://cdn-icons-png.flaticon.com/512/1174/1174444.png" />
+                </Link>
+                <Link className="rounded-lg bg-white" href="/">
+                  <img className="w-10 h-10" src="Casa.webp" />
+                </Link>
+            </div>
             <h1 className="text-4xl text-extrablack text-white">Rincón de pruebas</h1>
             <div className="w-1/2 bg-white/20 flex flex-col rounded-lg overflow-hidden p-2 gap-2">
                 <div className="w-full flex flex-row gap-2">
