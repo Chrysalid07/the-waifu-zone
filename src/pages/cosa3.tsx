@@ -30,9 +30,9 @@ function App() {
         reloadOnUpdate
         static
       >
-        {items.map(v => {
+        {items.map((v, i) => {
           return (
-            <img src={v.src} alt={v.altText} className="w-2/3 mx-5" />
+            <img key={i} src={v.src} alt={v.altText} className="w-2/3 mx-5" />
           )
         })}
       </Flickity>
