@@ -29,22 +29,30 @@ export default function Home() {
         </Link>
       </div>
       <div className=" flex flex-row p-4 gap-12">
-        <Link className="rounded-full w-fit border- border-slate-500" href="ellen">
+        <Link className="rounded-full w-fit" href="/ellen">
           <img className="rounded-full w-80 h-80" src="/Zenless Zone Zero foto Ellen.png" alt="Ellen Joe" />
         </Link> 
-        <Link className="rounded-lg w-fit" href="iono">
+        <Link className="rounded-full w-fit" href="/iono">
           <img className="rounded-full w-80 h-80" src="/Z Iono photo.png" alt="Iono" />
         </Link>
         <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Yoi"/>
       </div>
-      <div className=" flex flex-row p-4 gap-12">
+      <div className="flex flex-row p-4 gap-12">
         <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="O.N.K.W" />
-        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Unknown" />
-        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Unknown" />
+        <Link className="rounded-lg w-fit bg-yellow" href="/akane">
+          <div className="flex flex-col rounded-lg bg-white/30">
+            <img className="rounded-lg w-80 h-80" src="/Akane photo.jpg" alt="Akane (Temporarily)" />
+            <div className="flex flex-col items-center">
+              <h2 className="text-white font-extrabold">NEUVO</h2>
+            </div>
+          </div>
+        </Link>
+        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Carrot (Probably)" />
       </div>
-    <p className="text-2xl font-Bold">Texto de Prueba</p>
+    <div className="p-4">
+      <p className="text-2xl font-Bold rounded-lg bg-white/30 w-fit p-2">Comentario: Las fotos probablemente pasen toas a ser cuadra' NMQD</p>
+    </div>
     <p className="text-2xl text-white">Tania Cabezona</p>
-       
     </div>
   )
 }
