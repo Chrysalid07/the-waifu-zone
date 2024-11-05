@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Page() {
     const [imageSource, setImageSource] = useState("/puto ian/akane a.jpg")
