@@ -4,16 +4,20 @@ import Link from "next/link";
 
 const items = [
   {
-    src: '/Test Img 1.png',
+    src: '/Test images/Test Img 1.png',
     altText: 'Test Image 1',
   },
   {
-    src: '/Test Img 2.png',
+    src: '/Test images/Test Img 2.png',
     altText: 'Test Image 2',
   },
   {
-    src: '/Test Img 3.png',
+    src: '/Pista 2.png',
     altText: 'Test Image 3',
+  },
+  {
+    src: '/Test images/Test Img 3.png',
+    altText: 'Test Image 4',
   },
 ];
 
