@@ -11,9 +11,13 @@ export default function Home() {
   //useEffect(play, [play])
 
   return (
-    <div className={`min-h-screen bg-sky-800 flex flex-col gap-12`}>
+    <div className={`min-h-screen bg-sky-800 flex flex-col gap-8`}>
+      <img className="fixed top-0 left-0 right-0 w-full h-12 opacity-30" src="/Test Banner 1.png" alt="Test" />
+      <Link className="w-fit" href="/chrystarios">
+        <img className="h-10 w-10 fixed top-1 left-0 right-0" src="https://cdn-icons-png.flaticon.com/512/16/16021.png" alt="carlota" />
+      </Link>
       <div className="flex flex-row g-12 p-4">
-        <h1 className="text-7xl text-white">Monitas Chinas</h1>
+        <h1 className="text-7xl text-white mt-8">Monitas Chinas</h1>
         <div className="flex-grow" />
         <img className="padding-right w-12 h-12 opacity-5 cursor-pointer" src="https://images.wikidexcdn.net/mwuploads/wikidex/8/80/latest/20220228205623/Magnemite.png" onClick={() => {
           if (playing) {
@@ -29,16 +33,18 @@ export default function Home() {
         </Link>
       </div>
       <div className=" flex flex-row p-4 gap-12">
-        <Link className="rounded-full w-fit" href="/ellen">
-          <img className="rounded-full w-80 h-80" src="/Zenless Zone Zero foto Ellen.png" alt="Ellen Joe" />
+        <Link className="rounded-lg w-fit" href="/ellen">
+          <img className="rounded-lg w-80 h-80" src="/Zenless Zone Zero foto Ellen.png" alt="Ellen Joe" />
         </Link> 
-        <Link className="rounded-full w-fit" href="/iono">
-          <img className="rounded-full w-80 h-80" src="/Z Iono photo.png" alt="Iono" />
+        <Link className="rounded-lg w-fit" href="/iono">
+          <img className="rounded-lg w-80 h-80" src="/Z Iono photo.png" alt="Iono" />
         </Link>
-        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Yoi"/>
+        <Link className="" href="/Y">
+          <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Yoi"/>
+        </Link>
       </div>
       <div className="flex flex-row p-4 gap-12">
-        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="O.N.K.W" />
+        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="30 D.T" />
         <Link className="rounded-lg w-fit bg-yellow" href="/akane">
           <div className="flex flex-col rounded-lg bg-white/30">
             <img className="rounded-lg w-80 h-80" src="/Akane photo.jpg" alt="Akane (Temporarily)" />
@@ -47,11 +53,8 @@ export default function Home() {
             </div>
           </div>
         </Link>
-        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Carrot (Probably)" />
+        <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Carrot" />
       </div>
-    <div className="p-4">
-      <p className="text-2xl font-Bold rounded-lg bg-white/30 w-fit p-2">Comentario: Las fotos probablemente pasen toas a ser cuadra&apos; NMQD</p>
-    </div>
     <p className="text-2xl text-white">Tania Cabezona</p>
     </div>
   )
