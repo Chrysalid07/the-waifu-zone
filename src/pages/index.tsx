@@ -50,7 +50,7 @@ export default function Home() {
         <img className="rounded-full w-80 h-80" src="/To Be Determined.png" alt="Carrot (Probably)" />
       </div>
     <div className="p-4">
-      <p className="text-2xl font-Bold rounded-lg bg-white/30 w-fit p-2">Comentario: Las fotos probablemente pasen toas a ser cuadra' NMQD</p>
+      <p className="text-2xl font-Bold rounded-lg bg-white/30 w-fit p-2">Comentario: Las fotos probablemente pasen toas a ser cuadra&apos; NMQD</p>
     </div>
     <p className="text-2xl text-white">Tania Cabezona</p>
     </div>
