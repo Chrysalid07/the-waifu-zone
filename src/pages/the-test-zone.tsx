@@ -10,7 +10,7 @@ export default function Page() {
                 <h1 className="text-4xl text-white font-extrabold">The Test Zone</h1>
                 <div className="flex flex-col w-full gap-8">
                     <div className="flex flex-row gap-4">
-                        <Link href="cosa">
+                        <Link href="/the_test_zone/cosa">
                             <div className="rounded-lg w-full flex flex-col bg-white/20">
                                 <img src="/Test Zone/THE TABLA image.png" />
                                 <div className="flex flex-col gap-2 p-8 items-center">
@@ -18,7 +18,7 @@ export default function Page() {
                                 </div>
                             </div>
                         </Link>
-                        <Link href="cosa2">
+                        <Link href="/the_test_zone/cosa2">
                             <div className="rounded-lg w-full flex flex-col bg-white/20">
                                 <img src="/Test Zone/THE CLICKER image.png" />
                                 <div className="flex flex-col gap-2 p-8 items-center">
@@ -28,7 +28,7 @@ export default function Page() {
                         </Link>
                     </div>
                     <div className="flex flex-row gap-4">
-                        <Link href="cosa3">
+                        <Link href="/the_test_zone/cosa3">
                             <div className="rounded-lg w-full flex flex-col bg-white/20">
                                 <img className="invert" src="/Test Zone/THE CARROUSEL image.png" />
                                 <div className="flex flex-col gap-2 p-8 items-center">
@@ -36,7 +36,7 @@ export default function Page() {
                                 </div>
                             </div>
                         </Link>
-                        <Link href="cosa4">
+                        <Link href="/the_test_zone/cosa4">
                             <div className="rounded-lg w-full flex flex-col bg-white/20">
                                 <img src="/Test Zone/THE TACHER image.png" />
                                 <div className="flex flex-col gap-2 p-8 items-center">
@@ -46,7 +46,6 @@ export default function Page() {
                         </Link>
                     </div>
                 </div>
-                <p className="text-white">Yoimiya I420</p>
             </div>
         </div>
     )

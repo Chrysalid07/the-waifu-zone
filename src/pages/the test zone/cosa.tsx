@@ -6,11 +6,11 @@ export default function Page() {
     return (
         <div className="w-full min-h-screen bg-black flex flex-col items-center justify-center">
             <div className="flex flex-row">
-                <Link className="rounded-lg bg-white" href="the-test-zone">
-                    <img className="w-10 h-10" src="https://cdn-icons-png.flaticon.com/512/1174/1174444.png" />
+                <Link className="rounded-lg bg-white" href="/the-test-zone">
+                    <img className="w-10 h-10" src="/https://cdn-icons-png.flaticon.com/512/1174/1174444.png" />
                 </Link>
                 <Link className="rounded-lg bg-white" href="/">
-                  <img className="w-10 h-10" src="Casa.webp" />
+                  <img className="w-10 h-10" src="/Casa.webp" />
                 </Link>
             </div>
             <h1 className="text-4xl text-extrablack text-white">Rincón de pruebas</h1>

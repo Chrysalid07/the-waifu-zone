@@ -16,7 +16,7 @@ export default function Home() {
       <div className="flex flex-row fixed top-0 left-0 right-0 p-2">
         <h1 className="text-7xl font-semibold text-white">Monitas Chinas</h1>
         <Link className="w-fit" href="/chrystarios">
-          <img className="h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/16/16021.png" alt="carlota" />
+          <img className="h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/16/16021.png" alt="comments" />
         </Link></div>
       <div className="flex flex-row g-12 p-4">
         <div className="flex-grow" />
@@ -35,31 +35,36 @@ export default function Home() {
       </div>
       <div className=" flex flex-row p-4 gap-12">
         <Link className="rounded-lg w-fit" href="/ellen">
-          <img className="rounded-lg w-80 h-80" src="/Zenless Zone Zero foto Ellen.png" alt="Ellen Joe" />
+          <img className="rounded-lg w-80 h-80" src="/Waifus/Ellen photo.png" alt="Ellen Joe" />
         </Link> 
         <Link className="rounded-lg w-fit" href="/iono">
-          <img className="rounded-lg w-80 h-80" src="/Z Iono photo.png" alt="Iono" />
+          <img className="rounded-lg w-80 h-80" src="/Waifus/Iono photo.png" alt="Iono" />
         </Link>
         <Link className="" href="/Y">
-          <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Yoi"/>
+          <div className="flex flex-col rounded-lg bg-orange-300/50">
+            <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Yoi"/>
+            <div className="flex flex-col items-center">
+              <h2 className="text-white font-extrabold">IN PROGRESS</h2>
+            </div>
+          </div>
         </Link>
       </div>
       <div className="flex flex-row p-4 gap-12">
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="30 D.T" />
+        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="30 D.T (Rina)" />
         <Link className="rounded-lg w-fit bg-yellow" href="/akane">
           <div className="flex flex-col rounded-lg bg-white/30">
-            <img className="rounded-lg w-80 h-80" src="/Akane photo.jpg" alt="Akane" />
+            <img className="rounded-lg w-80 h-80" src="/Waifus/Akane photo.jpg" alt="Akane" />
             <div className="flex flex-col items-center">
               <h2 className="text-white font-extrabold">NEUVO</h2>
             </div>
           </div>
         </Link>
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Carrot" />
+        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Carrot (Yotsuba)" />
       </div>
       <div className="flex flex-row p-4 gap-12">
-        <img className="rounded-full w-80 h-80 opacity-0" src="/Test images/To Be Determined.png" alt="" />
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Pre K Now S (Clues TTZ y EJ)" />
-        <img className="rounded-full w-80 h-80 opacity-0" src="/Test images/To Be Determined.png" alt="" />
+        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="" />
+        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Pre K Now S (Sumire)" />
+        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="" />
       </div>
     <p className="text-2xl text-white">Tania Cabezona</p>
     </div>
