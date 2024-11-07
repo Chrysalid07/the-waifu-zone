@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Page() {
     return (
         <div className={`min-h-screen bg-violet-200 flex flex-col gap-12 font-[family-name:var(--font-geist-sans)]`}>
