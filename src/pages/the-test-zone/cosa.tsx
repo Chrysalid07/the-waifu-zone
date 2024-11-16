@@ -7,10 +7,10 @@ export default function Page() {
         <div className="w-full min-h-screen bg-black flex flex-col items-center justify-center">
             <div className="flex flex-row">
                 <Link className="rounded-lg bg-white" href="/the-test-zone">
-                    <img className="w-10 h-10" src="/https://cdn-icons-png.flaticon.com/512/1174/1174444.png" />
+                    <img className="w-10 h-10" src="/Pred images/Flecha.png" />
                 </Link>
                 <Link className="rounded-lg bg-white" href="/">
-                  <img className="w-10 h-10" src="/Casa.webp" />
+                  <img className="w-10 h-10" src="/Pred images/Casa.webp" />
                 </Link>
             </div>
             <h1 className="text-4xl text-extrablack text-white">Rincón de pruebas</h1>
@@ -95,7 +95,7 @@ export default function Page() {
                     <div className="w-full flex flex-row gap-2">
                         <img src="https://static.wikia.nocookie.net/dbz-dokkanbattle/images/2/20/Card_1030210_thumb.png" className="aspect-square flex-grow" />
                         <img src="https://static.wikia.nocookie.net/dbz-dokkanbattle/images/6/60/Card_1012400_thumb_apng.png" className="aspect-square flex-grow" />
-                        <img src="https://static.wikia.nocookie.net/dbz-dokkanbattle/images/6/6c/Card_1016230_thumb_apng.png" className="aspect-square flex-grow" />
+                        <img src="/C4.png" className="aspect-square flex-grow h-30 w-24" />
                     </div>
                 </>}
             </div>

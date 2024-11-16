@@ -1,24 +1,132 @@
+import Flickity from "react-flickity-component-module";
+import "flickity/css/flickity.css"
 import Link from "next/link";
 import { useState } from "react";
 import useSound from "use-sound";
 
 export default function Home() {
   const [playing, setPlaying] = useState(false)
-  const [play, {stop}] = useSound("/3NK3vSz.m4a", {
+  const [play, {stop}] = useSound("/Music/3NK3vSz.m4a", {
     interrupt: true
   })
 
   //useEffect(play, [play])
 
+  const items = [
+    {
+      src: '/Waifu News/Waifu news sign.png',
+      href: '/news',
+      altText: 'Waifu news test',
+    },
+    {
+      src: '/Waifu News/Ellen Announcement.png',
+      href: '/waifus/ellen',
+      altText: 'Test Image 1',
+    },
+    {
+      src: '/Waifu News/Iono Announcement.png',
+      href: '/waifus/iono',
+      altText: 'Test Image 2',
+    },
+    {
+      src: '/Waifu News/Yoimiya Announcement.png',
+      href: '/waifus/yoimiya',
+      altText: 'Test Image 3',
+    },
+    {
+      src: '/C2 b.png',
+      href: '/',
+      altText: 'Test Image 2',
+    },
+    {
+      src: '/Waifu News/Teaser 1 Announcement.png',
+      href: '/the-test-zone/another',
+      altText: 'Test Image Teaser',
+    },
+    {
+      src: '/Waifu News/Akane Announcement.png',
+      href: '/waifus/akane',
+      altText: 'Test Image 4',
+    },
+  ];
+
   return (
     <div className={`min-h-screen bg-sky-800 flex flex-col gap-8`}>
-      <img className="fixed top-0 left-0 right-0 w-full h-20 opacity-30" src="/Test images/Test Banner 1.png" alt="Test" />
-      <div className="flex flex-row fixed top-0 left-0 right-0 p-2">
+      <img className="fixed top-0 left-0 right-0 w-full h-20 opacity-40 z-10" src="/Test images/Test Banner 1.png" alt="Test" />
+      <div className="flex flex-row fixed top-0 left-0 right-0 gap-12 p-2 z-10">
         <h1 className="text-7xl font-semibold text-white">Monitas Chinas</h1>
         <Link className="w-fit" href="/chrystarios">
-          <img className="h-10 w-10" src="https://cdn-icons-png.flaticon.com/512/16/16021.png" alt="comments" />
-        </Link></div>
+          <img className="h-16 w-16" src="https://cdn-icons-png.flaticon.com/512/16/16021.png" alt="comments" />
+        </Link>
+        <Link className="w-fit" href="/news">
+          <img className="h-16 w-16" src="https://svgsilh.com/svg_v2/1096279.svg" alt="news" />
+        </Link>
+      </div>
+      <div>{/* Spacer */}</div>
+      <div>{/* Spacer */}</div>
+      <div>{/* Spacer */}</div>
+      <div>{/* Spacer */}</div>
+      <div className="flex flex-row items-center justify-center">
+        <Flickity
+          className={'carousel w-1/2'}                
+          elementType={'div'}                   
+          options={{
+            wrapAround: true,
+            autoPlay: 3000
+          }}
+          disableImagesLoaded
+          reloadOnUpdate
+          static
+        >
+          {items.map((v, i) => {
+            return (
+              <Link key={i} href={v.href} className="w-2/3 mx-5">
+                <img src={v.src} alt={v.altText} />
+              </Link>
+            )
+          })}
+        </Flickity>
+      </div>
+      <div>{/* Spacer */}</div>
+      <div className=" flex flex-row p-4 gap-12">
+        <Link className="rounded-lg w-fit" href="/waifus/ellen">
+          <img className="rounded-lg w-80 h-80" src="/Waifus/Ellen photo.png" alt="Ellen Joe" />
+        </Link> 
+        <Link className="rounded-lg w-fit" href="/waifus/iono">
+          <img className="rounded-lg w-80 h-80" src="/Waifus/Iono photo.png" alt="Iono" />
+        </Link>
+        <Link className="" href="/waifus/yoimiya">
+          <div className="flex flex-col rounded-lg bg-white/30">
+            <img className="rounded-lg w-80 h-80" src="/Waifus/Yoimiya photo.png" alt="Yoi"/>
+            <div className="flex flex-col items-center">
+              <h2 className="text-white font-extrabold">NEUVO</h2>
+            </div>
+          </div>
+        </Link>
+      </div>
+      <div className="flex flex-row p-4 gap-12">
+        <Link className="" href="/waifus/rina">
+          <div className="flex flex-col rounded-lg bg-orange-300/50">
+            <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="30 D.T (Rina)"/>
+            <div className="flex flex-col items-center">
+              <h2 className="text-white font-extrabold">IN PROGRESS</h2>
+            </div>
+          </div>
+        </Link>
+        <Link className="rounded-lg w-fit" href="/waifus/akane">
+          <div className="flex flex-col rounded-lg">
+            <img className="rounded-lg w-80 h-80" src="/Waifus/Akane photo.jpg" alt="Akane" />
+          </div>
+        </Link>
+        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Carrot (Yotsuba)" />
+      </div>
+      <div className="flex flex-row p-4 gap-12">
+        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Evil spirit's wrath" />
+        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Pre K Now S (Sumire)" />
+        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="" />
+      </div>
       <div className="flex flex-row g-12 p-4">
+        <p className="text-2xl text-white">Tania Cabezona</p>
         <div className="flex-grow" />
         <img className="padding-right w-12 h-12 opacity-5 cursor-pointer" src="https://images.wikidexcdn.net/mwuploads/wikidex/8/80/latest/20220228205623/Magnemite.png" onClick={() => {
           if (playing) {
@@ -33,40 +141,6 @@ export default function Home() {
           <img className="padding-right w-12 h-12" src="https://images.wikidexcdn.net/mwuploads/wikidex/8/80/latest/20220228205623/Magnemite.png" />
         </Link>
       </div>
-      <div className=" flex flex-row p-4 gap-12">
-        <Link className="rounded-lg w-fit" href="/ellen">
-          <img className="rounded-lg w-80 h-80" src="/Waifus/Ellen photo.png" alt="Ellen Joe" />
-        </Link> 
-        <Link className="rounded-lg w-fit" href="/iono">
-          <img className="rounded-lg w-80 h-80" src="/Waifus/Iono photo.png" alt="Iono" />
-        </Link>
-        <Link className="" href="/Y">
-          <div className="flex flex-col rounded-lg bg-orange-300/50">
-            <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Yoi"/>
-            <div className="flex flex-col items-center">
-              <h2 className="text-white font-extrabold">IN PROGRESS</h2>
-            </div>
-          </div>
-        </Link>
-      </div>
-      <div className="flex flex-row p-4 gap-12">
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="30 D.T (Rina)" />
-        <Link className="rounded-lg w-fit bg-yellow" href="/akane">
-          <div className="flex flex-col rounded-lg bg-white/30">
-            <img className="rounded-lg w-80 h-80" src="/Waifus/Akane photo.jpg" alt="Akane" />
-            <div className="flex flex-col items-center">
-              <h2 className="text-white font-extrabold">NEUVO</h2>
-            </div>
-          </div>
-        </Link>
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Carrot (Yotsuba)" />
-      </div>
-      <div className="flex flex-row p-4 gap-12">
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="" />
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Pre K Now S (Sumire)" />
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="" />
-      </div>
-    <p className="text-2xl text-white">Tania Cabezona</p>
     </div>
   )
 }

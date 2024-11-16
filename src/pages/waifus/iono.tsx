@@ -9,12 +9,12 @@ export default function Page() {
             <div className="h-full flex flex-col gap-12 self-start">
                 <div className="flex flex-row g-12 p-4">
                     <Link href="/">
-                        <img className="w-10 h-10" src="Casa.webp" />
+                        <img className="w-10 h-10" src="/Pred images/Casa.webp" />
                     </Link>
-                    <h1 className="text-7xl text-white p-4">Iono</h1>
+                    <h1 className="text-6xl text-white p-4">Iono</h1>
                 </div>
                 <div className=" flex flex-row gap-12">
-                    <img className="rounded-full w-96 h-96" src="/Z Iono photo.png" alt="Iono" />
+                    <img className="rounded-full w-96 h-96" src="/Waifus/Iono photo.png" alt="Iono" />
                 </div>
             </div>
             <div className="w-1/2 h-2/3 bg-white/20 flex flex-col rounded-lg overflow-hidden p-2 gap-2">
@@ -54,8 +54,8 @@ export default function Page() {
                     </div>
                     <div className="w-full flex flex-row gap-2">
                         <img src="https://images.wikidexcdn.net/mwuploads/wikidex/2/25/latest/20200721105200/Mismagius.png" className="aspect-square flex-grow w-40 h-52" />
-                        <img src="Pokeball tachada.png" className="aspect-square flex-grow w-40 h-52" />
-                        <img src="Pokeball tachada.png" className="aspect-square flex-grow w-40 h-52" />
+                        <img src="/Waifus/iono/Pokeball tachada.png" className="aspect-square flex-grow w-40 h-52" />
+                        <img src="/Waifus/iono/Pokeball tachada.png" className="aspect-square flex-grow w-40 h-52" />
                     </div>
                 </>}
                 {selectedGame == "Eq2" && <>
@@ -67,7 +67,7 @@ export default function Page() {
                     <div className="w-full flex flex-row gap-2">
                         <img src="https://images.wikidexcdn.net/mwuploads/wikidex/e/ee/latest/20200720153035/Luxray.png" className="aspect-square flex-grow w-40 h-52" />
                         <img src="https://images.wikidexcdn.net/mwuploads/wikidex/2/25/latest/20200721105200/Mismagius.png" className="aspect-square flex-grow w-40 h-52" />
-                        <img src="Pokeball tachada.png" className="aspect-square flex-grow w-40 h-52" />
+                        <img src="/Waifus/iono/Pokeball tachada.png" className="aspect-square flex-grow w-40 h-52" />
                     </div>
                 </>}
                 {selectedGame == "Eq3" && <>

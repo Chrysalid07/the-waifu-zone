@@ -5,18 +5,22 @@ import Link from "next/link";
 const items = [
   {
     src: '/Test images/Test Img 1.png',
+    href: '/the-test-zone/cosa3',
     altText: 'Test Image 1',
   },
   {
     src: '/Test images/Test Img 2.png',
+    href: '/the-test-zone/cosa3',
     altText: 'Test Image 2',
   },
   {
     src: '/Test images/Test Img 3.png',
+    href: '/deadzone',
     altText: 'Test Image 3',
   },
   {
     src: '/Test images/Test Img 2.png',
+    href: '/the-test-zone/cosa3',
     altText: 'Test Image 4',
   },
 ];
@@ -26,10 +30,10 @@ function App() {
     <div className="w-full h-screen bg-black flex items-center justify-center flex-col gap-8">
       <div className="flex flex-row">
         <Link className="rounded-lg" href="/the-test-zone">
-          <img className="w-10 h-10 invert" src="https://cdn-icons-png.flaticon.com/512/1174/1174444.png" />
+          <img className="w-10 h-10 invert" src="/Pred images/Flecha.png" />
         </Link>
         <Link className="rounded-lg" href="/">
-          <img className="w-10 h-10 invert" src="/Casa.webp" />
+          <img className="w-10 h-10 invert" src="/Pred images/Casa.webp" />
         </Link>
       </div>
       <Flickity
@@ -45,8 +49,9 @@ function App() {
       >
         {items.map((v, i) => {
           return (
-            <img key={i} src={v.src} alt={v.altText} className="w-2/3 mx-5" />
-          )
+            <Link key={i} href={v.href} className="w-2/3 mx-5">
+              <img src={v.src} alt={v.altText} />
+            </Link>          )
         })}
       </Flickity>
     </div>
