@@ -21,27 +21,32 @@ export default function Home() {
     {
       src: '/Waifu News/Ellen Announcement.png',
       href: '/waifus/ellen',
-      altText: 'Test Image 1',
+      altText: 'Ellen Announcement',
     },
     {
       src: '/Waifu News/Iono Announcement.png',
       href: '/waifus/iono',
-      altText: 'Test Image 2',
+      altText: 'Iono Announcement',
     },
     {
       src: '/Waifu News/Yoimiya Announcement.png',
       href: '/waifus/yoimiya',
-      altText: 'Test Image 3',
+      altText: 'Yoimiya Announcement',
     },
     {
       src: '/Waifu News/rina_announcement.png',
       href: '/waifus/rina',
-      altText: 'Test Image Teaser',
+      altText: 'Rina Announcement',
     },
     {
       src: '/Waifu News/Akane Announcement.png',
       href: '/waifus/akane',
-      altText: 'Test Image 4',
+      altText: 'Akane Announcement',
+    },
+    {
+      src: '/Waifu News/teaser_2_announcement.png',
+      href: '/progress',
+      altText: 'Teaser 2 Announcement',
     },
   ];
 
@@ -108,13 +113,12 @@ export default function Home() {
             <img className="rounded-lg w-80 h-80" src="/Waifus/Akane photo.jpg" alt="Akane" />
           </div>
         </Link>
-        
-        <div className="flex flex-col rounded-lg bg-orange-300/50">
+        <Link className="flex flex-col rounded-lg bg-orange-300/50" href="/progress">
           <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Carrot (Yotsuba)" />
             <div className="flex flex-col items-center">
               <h2 className="text-white font-extrabold">IN PROGRESS</h2>
             </div>
-        </div>
+        </Link>
       </div>
       <div className="flex flex-row p-4 gap-12">
         <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Evil spirit's wrath" />
