@@ -34,13 +34,8 @@ export default function Home() {
       altText: 'Test Image 3',
     },
     {
-      src: '/C2 b.png',
-      href: '/',
-      altText: 'Test Image 2',
-    },
-    {
-      src: '/Waifu News/Teaser 1 Announcement.png',
-      href: '/the-test-zone/another',
+      src: '/Waifu News/rina_announcement.png',
+      href: '/waifus/rina',
       altText: 'Test Image Teaser',
     },
     {
@@ -96,20 +91,15 @@ export default function Home() {
           <img className="rounded-lg w-80 h-80" src="/Waifus/Iono photo.png" alt="Iono" />
         </Link>
         <Link className="" href="/waifus/yoimiya">
-          <div className="flex flex-col rounded-lg bg-white/30">
-            <img className="rounded-lg w-80 h-80" src="/Waifus/Yoimiya photo.png" alt="Yoi"/>
-            <div className="flex flex-col items-center">
-              <h2 className="text-white font-extrabold">NEUVO</h2>
-            </div>
-          </div>
+          <img className="rounded-lg w-80 h-80" src="/Waifus/Yoimiya photo.png" alt="Yoi"/>
         </Link>
       </div>
       <div className="flex flex-row p-4 gap-12">
         <Link className="" href="/waifus/rina">
-          <div className="flex flex-col rounded-lg bg-orange-300/50">
-            <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="30 D.T (Rina)"/>
+          <div className="flex flex-col rounded-lg bg-white/30">
+            <img className="rounded-lg w-80 h-80" src="/Waifus/rina_photo.png" alt="30 D.T (Rina)"/>
             <div className="flex flex-col items-center">
-              <h2 className="text-white font-extrabold">IN PROGRESS</h2>
+              <h2 className="text-white font-extrabold">NEUVO</h2>
             </div>
           </div>
         </Link>
@@ -118,7 +108,13 @@ export default function Home() {
             <img className="rounded-lg w-80 h-80" src="/Waifus/Akane photo.jpg" alt="Akane" />
           </div>
         </Link>
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Carrot (Yotsuba)" />
+        
+        <div className="flex flex-col rounded-lg bg-orange-300/50">
+          <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Carrot (Yotsuba)" />
+            <div className="flex flex-col items-center">
+              <h2 className="text-white font-extrabold">IN PROGRESS</h2>
+            </div>
+        </div>
       </div>
       <div className="flex flex-row p-4 gap-12">
         <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Evil spirit's wrath" />
