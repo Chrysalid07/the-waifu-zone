@@ -52,13 +52,12 @@ export default function Home() {
 
   return (
     <div className={`min-h-screen bg-sky-800 flex flex-col gap-8`}>
-      <img className="fixed top-0 left-0 right-0 w-full h-20 opacity-40 z-10" src="/Test images/Test Banner 1.png" alt="Test" />
-      <div className="flex flex-row fixed top-0 left-0 right-0 gap-12 p-2 z-10">
+      <div className="flex flex-row fixed top-0 left-0 right-0 gap-6 p-2 z-10 overflow-auto whitespace-nowrap bg-sky-400/50">
         <h1 className="text-7xl font-semibold text-white">Monitas Chinas</h1>
-        <Link className="w-fit" href="/chrystarios">
+        <Link className="flex-none" href="/chrystarios">
           <img className="h-16 w-16" src="https://cdn-icons-png.flaticon.com/512/16/16021.png" alt="comments" />
         </Link>
-        <Link className="w-fit" href="/news">
+        <Link className="flex-none" href="/news">
           <img className="h-16 w-16" src="https://svgsilh.com/svg_v2/1096279.svg" alt="news" />
         </Link>
       </div>
@@ -88,42 +87,38 @@ export default function Home() {
         </Flickity>
       </div>
       <div>{/* Spacer */}</div>
-      <div className=" flex flex-row p-4 gap-12">
-        <Link className="rounded-lg w-fit" href="/waifus/ellen">
-          <img className="rounded-lg w-80 h-80" src="/Waifus/Ellen photo.png" alt="Ellen Joe" />
+      <div className="grid grid-cols-3 p-4 w-fit gap-4 md:gap-12 items-start">
+        <Link href="/waifus/ellen">
+          <img className="rounded-lg aspect-square w-80" src="/Waifus/Ellen photo.png" alt="Ellen Joe" />
         </Link> 
-        <Link className="rounded-lg w-fit" href="/waifus/iono">
-          <img className="rounded-lg w-80 h-80" src="/Waifus/Iono photo.png" alt="Iono" />
+        <Link href="/waifus/iono">
+          <img className="rounded-lg aspect-square w-80" src="/Waifus/Iono photo.png" alt="Iono" />
         </Link>
-        <Link className="" href="/waifus/yoimiya">
-          <img className="rounded-lg w-80 h-80" src="/Waifus/Yoimiya photo.png" alt="Yoi"/>
+        <Link href="/waifus/yoimiya">
+          <img className="rounded-lg aspect-square w-80" src="/Waifus/Yoimiya photo.png" alt="Yoi"/>
         </Link>
-      </div>
-      <div className="flex flex-row p-4 gap-12">
-        <Link className="" href="/waifus/rina">
+        <Link href="/waifus/rina">
           <div className="flex flex-col rounded-lg bg-white/30">
-            <img className="rounded-lg w-80 h-80" src="/Waifus/rina_photo.png" alt="30 D.T (Rina)"/>
+            <img className="rounded-lg aspect-square w-80" src="/Waifus/rina_photo.png" alt="30 D.T (Rina)"/>
             <div className="flex flex-col items-center">
               <h2 className="text-white font-extrabold">NEUVO</h2>
             </div>
           </div>
         </Link>
-        <Link className="rounded-lg w-fit" href="/waifus/akane">
+        <Link href="/waifus/akane">
           <div className="flex flex-col rounded-lg">
-            <img className="rounded-lg w-80 h-80" src="/Waifus/Akane photo.jpg" alt="Akane" />
+            <img className="rounded-lg aspect-square w-80" src="/Waifus/Akane photo.jpg" alt="Akane" />
           </div>
         </Link>
         <Link className="flex flex-col rounded-lg bg-orange-300/50" href="/progress">
-          <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Carrot (Yotsuba)" />
+          <img className="rounded-full aspect-square w-80" src="/Test images/To Be Determined.png" alt="Carrot (Yotsuba)" />
             <div className="flex flex-col items-center">
               <h2 className="text-white font-extrabold">IN PROGRESS</h2>
             </div>
         </Link>
-      </div>
-      <div className="flex flex-row p-4 gap-12">
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Evil spirit's wrath" />
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="Pre K Now S (Sumire)" />
-        <img className="rounded-full w-80 h-80" src="/Test images/To Be Determined.png" alt="" />
+        <img className="rounded-full aspect-square w-80" src="/Test images/To Be Determined.png" alt="Evil spirit's wrath" />
+        <img className="rounded-full aspect-square w-80" src="/Test images/To Be Determined.png" alt="Pre K Now S (Sumire)" />
+        <img className="rounded-full aspect-square w-80" src="/Test images/To Be Determined.png" alt="" />
       </div>
       <div className="flex flex-row g-12 p-4">
         <p className="text-2xl text-white">Tania Cabezona</p>

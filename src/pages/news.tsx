@@ -21,6 +21,7 @@ export default function Page() {
                     <div className="flex flex-col gap-4">
                         <h4 className="text-2xl text-black font-bold rounded-lg w-fit">Additions:</h4>
                         <p className="text-2xl text-black rounded-lg w-fit">· Added the a new teaser</p>
+                        <p className="text-2xl text-black rounded-lg w-fit">· Added better compatibility with small screens</p>
                     </div>
                     <div className="flex flex-col gap-4">
                         <h4 className="text-2xl text-black font-bold rounded-lg w-fit">Improvements:</h4>
